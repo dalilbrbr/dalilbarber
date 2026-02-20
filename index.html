@@ -892,16 +892,7 @@
                 data[key] = value;
             });
             
-            // Create mailto link with form data
-            const subject = encodeURIComponent('Terminanfrage von ' + data.name);
-            const body = encodeURIComponent(
-                `Name: ${data.name}\n` +
-                `E-Mail: ${data.email}\n` +
-                `Telefon: ${data.phone}\n` +
-                `Service: ${data.service}\n` +
-                `Gewünschter Termin: ${data.date}\n` +
-                `Nachricht: ${data.message || 'Keine besonderen Wünsche'}`
-            );
+       
             
             window.location.href = `mailto:de.lil.ismail33@icloud.com?subject=${subject}&body=${body}`;
         });
